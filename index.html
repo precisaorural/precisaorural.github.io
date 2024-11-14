@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSINATURA DE E-MAIL</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styleindex.css">
+	<link rel="stylesheet" href="./styles/styleloading.css">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+    <div id="loadingScreen">
+		<div class="spinner"></div>
+		<p>Carregando...</p>
+	</div>
+	
+	<div id="navbar"></div>
+	
+	<div class="banner">
+        <img src="./images/assinatura.jpg" alt="Banner Promocional">
+    </div>
+	
+	<div class="container form-container">
+		<div class="form-header">
+			PREENCHA O FORMULÁRIO ABAIXO:
+		</div>
+		<div class="form-box">
+			<form id="assinaturaForm">
+				<div class="form-row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">NOME:</span>
+								<span class="label-obs">*Obrigatório</span>
+							</div>
+							<input type="text" class="form-control" id="nome" required placeholder="Digite seu nome">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">CARGO:</span>
+								<span class="label-obs">*Obrigatório</span>
+							</div>
+							<input type="text" class="form-control" id="cargo" required placeholder="Digite seu cargo">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">CELULAR:</span>
+								<span class="label-obs">*Obrigatório</span>
+							</div>
+							<input type="text" class="form-control" id="celular" required placeholder="Digite seu celular">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">CELULAR 02:</span>
+								<span class="label-obs">*Opcional</span>
+							</div>
+							<input type="text" class="form-control" id="celular2" placeholder="Digite seu celular">
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">E-MAIL:</span>
+								<span class="label-obs">*Obrigatório</span>
+							</div>
+							<input type="email" class="form-control" id="email" required placeholder="Digite seu e-mail">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="label-container">
+								<span class="label-titulo">CIDADE:</span>
+								<span class="label-obs">*Obrigatório</span>
+							</div>
+							<input type="text" class="form-control" id="cidade" required placeholder="Digite a cidade - Estado">
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Gerar Imagem</button>
+			</form>
+			<canvas id="canvas" width="800" height="600" style="display:none;"></canvas>
+			<div class="download-buttons">
+				<button id="downloadJPG" class="btn btn-secondary" style="display:none;">Baixar JPG</button>
+			</div>
+
+		</div>
+	</div>
+	
+	<div id="footer"></div>
+	
+	<script type="module" src="./scripts/loadcomponents.js"></script>
+	<script src="./scripts/baseimagens.js"></script>
+    <script src="./scripts/script.js"></script>
+	<!-- Bootstrap JS and dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+</body>
+</html>

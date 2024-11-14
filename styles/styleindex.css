@@ -101,7 +101,7 @@
         .mode-toggle {
             cursor: pointer;
             font-size: 20px;
-            color: #007bff;
+            color: #ff0000;
             margin-left: auto; /* Move o botão para o lado direito */
         }
 
@@ -113,7 +113,7 @@
         }
         .footer .social-icons i {
             font-size: 24px;
-            color: #007bff;
+            color: #ff0000;
             margin: 0 10px;
         }
         .footer .footer-logo img {

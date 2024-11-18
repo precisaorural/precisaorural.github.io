@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 	
 	cleaveCelular2 = new Cleave('#celular2', {
-		delimiters: ['(', ') ', ' ', '-'],
-		blocks: [0, 2, 1, 4, 4],
+		delimiters: ['(', ') ', '-'],
+		blocks: [0, 2, 4, 4],
 		numericOnly: true
     });
 	
@@ -139,7 +139,7 @@ function configureFormEvent(formId, customConst, cleaveInstances) {
 
 					ctx.font = 'bold 55px "Noto Sans", sans-serif';
 					ctx.fillStyle = '#000000';
-					ctx.fillText(numero2, 1870, 314);
+					ctx.fillText(numero2, 1865, 314);
 					
 				} else {
 
